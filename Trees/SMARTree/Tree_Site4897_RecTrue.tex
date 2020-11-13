@@ -1,0 +1,44 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning,shapes.geometric}
+\usepackage{ifthen}
+
+\setlength{\textwidth}{40cm}
+
+\begin{document}
+\begin{tikzpicture}
+
+\def\hstep{.5pt}
+\def\vstep{.25pt}
+
+\def\pone{{2, 0, 3, 8, 1, 4, 10}}
+\def\ptwo{{5, 7, 6, 9, 11, 12, 13}}
+\def\site{4897}
+\def\X{{4, 4.6, 0, 8, 5.4, 2, 10, 6, 1.0, 5.0, 9.0, 3.0, 3.8, 4.6, 6.8}}
+\def\minx{0.000000}
+\def\maxx{10.000000}
+\def\T{{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.020048361376906708, 0.04801085544951425, 0.20037049341101812, 0.31714564544111934, 0.3991371521813325, 0.6934942247826615, 0.991580743925031}}
+\def\Tnorm{{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.4159223628754054, 2.1911379566224087, 4.476276280693788, 5.6315685687126225, 6.317730226761289, 8.327630063725582, 9.957814739816317}}
+\def\LAB{{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}}
+\def\coloring{-1}
+\def\globalindex{{0, 1, 2, 3, 4, 5, 6}}
+\def\globalindiceson{-1}
+\def\regrafttime{0}
+\def\regrafttimenorm{3}
+\def\recombinationtime{0}
+\def\recombinationtimenorm{3}
+\def\NL{8}
+\def\NN{15}
+\def\prune{6}
+\def\regraft{4}
+
+\def\prpar{-1}
+\def\rgpar{-1}
+
+\def\newnode{-1}
+
+\input{./phytree.tex}
+
+\end{tikzpicture}
+\end{document}
