@@ -1,0 +1,182 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning,shapes.geometric}
+\usepackage{ifthen}
+
+\setlength{\textwidth}{40cm}
+
+\begin{document}
+\begin{tikzpicture}
+\def\hstep{.5pt}
+\def\vstep{.25pt}
+\def\pone{{0,2,1,3,6,11,8}}
+\def\ptwo{{4,5,7,10,9,12,13}}
+\def\site{1}
+\def\X{{  0.0000,  3.0000,  6.0000,  2.0000,  1.0000,  7.0000,  5.0000,  4.0000,  0.5000,  6.5000,  3.5000,  2.7500,  5.7500,  4.2500,  2.3750}}
+\def\minx{  0.0000}
+\def\maxx{  7.0000}
+\def\T{{  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0108,  0.0183,  0.0694,  0.5630,  1.0611,  1.5600,  2.0030}}
+\def\Tnorm{{  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.1083,  0.1832,  0.6931,  5.6218, 10.5949, 15.5763, 20.0000}}
+\def\LAB{{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14}}
+\def\coloring{-1}
+\def\globalindex{{0,1,2,3,4,5,6}}
+\def\globalindiceson{1}
+\def\regrafttime{  0.0497}
+\def\regrafttimenorm{  0.4966}
+\def\recombinationtime{  0.0077}
+\def\recombinationtimenorm{  0.0769}
+\def\NL{8}
+\def\NN{15}
+\def\prune{4}
+\def\regraft{3}
+
+\def\prpar{7}
+\def\rgpar{11}
+
+\def\newnode{-1}
+
+\input{./phytree.tex}
+
+\def\pone{{2,3,1,9,6,11,0}}
+\def\ptwo{{5,4,7,10,8,12,13}}
+\def\site{1930}
+\def\X{{  9.0000, 12.0000, 15.0000, 10.0000, 11.0000, 16.0000, 14.0000, 13.0000, 15.5000, 10.5000, 12.5000, 11.5000, 14.7500, 13.1250, 11.0625}}
+\def\minx{  9.0000}
+\def\maxx{ 16.0000}
+\def\T{{  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0183,  0.0497,  0.0694,  0.5630,  1.0611,  1.5600,  2.0030}}
+\def\Tnorm{{  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.1832,  0.4966,  0.6931,  5.6218, 10.5949, 15.5763, 20.0000}}
+\def\LAB{{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14}}
+\def\coloring{-1}
+\def\globalindex{{1,7,2,3,4,5,6}}
+\def\globalindiceson{1}
+\def\regrafttime{  0.6546}
+\def\regrafttimenorm{  6.5358}
+\def\recombinationtime{  0.0177}
+\def\recombinationtimenorm{  0.1769}
+\def\NL{8}
+\def\NN{15}
+\def\prune{4}
+\def\regraft{6}
+
+\def\prpar{7}
+\def\rgpar{12}
+
+\def\newnode{-1}
+
+\input{./phytree.tex}
+
+\def\pone{{2,1,3,4,8,10,0}}
+\def\ptwo{{5,7,9,6,11,12,13}}
+\def\site{5162}
+\def\X{{ 18.0000, 20.0000, 22.0000, 19.0000, 24.0000, 23.0000, 25.0000, 21.0000, 22.5000, 20.5000, 19.7500, 24.5000, 23.5000, 21.6250, 19.8125}}
+\def\minx{ 18.0000}
+\def\maxx{ 25.0000}
+\def\T{{  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0183,  0.0694,  0.5630,  0.6546,  1.0611,  1.5600,  2.0030}}
+\def\Tnorm{{  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.1832,  0.6931,  5.6218,  6.5358, 10.5949, 15.5763, 20.0000}}
+\def\LAB{{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14}}
+\def\coloring{-1}
+\def\globalindex{{1,2,3,8,4,5,6}}
+\def\globalindiceson{1}
+\def\regrafttime{  0.0288}
+\def\regrafttimenorm{  0.2878}
+\def\recombinationtime{  0.0223}
+\def\recombinationtimenorm{  0.2226}
+\def\NL{8}
+\def\NN{15}
+\def\prune{1}
+\def\regraft{3}
+
+\def\prpar{7}
+\def\rgpar{10}
+
+\def\newnode{-1}
+
+\input{./phytree.tex}
+
+\def\pone{{2,1,7,4,8,10,0}}
+\def\ptwo{{5,3,9,6,11,12,13}}
+\def\site{5441}
+\def\X{{ 27.0000, 29.0000, 31.0000, 30.0000, 33.0000, 32.0000, 34.0000, 28.0000, 31.5000, 29.5000, 28.7500, 33.5000, 32.5000, 30.6250, 28.8125}}
+\def\minx{ 27.0000}
+\def\maxx{ 34.0000}
+\def\T{{  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0183,  0.0288,  0.5630,  0.6546,  1.0611,  1.5600,  2.0030}}
+\def\Tnorm{{  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.1832,  0.2878,  5.6218,  6.5358, 10.5949, 15.5763, 20.0000}}
+\def\LAB{{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14}}
+\def\coloring{-1}
+\def\globalindex{{1,9,3,8,4,5,6}}
+\def\globalindiceson{1}
+\def\regrafttime{  0.4089}
+\def\regrafttimenorm{  4.0826}
+\def\recombinationtime{  0.2355}
+\def\recombinationtimenorm{  2.3517}
+\def\NL{8}
+\def\NN{15}
+\def\prune{8}
+\def\regraft{9}
+
+\def\prpar{7}
+\def\rgpar{10}
+
+\def\newnode{-1}
+
+\input{./phytree.tex}
+
+\def\pone{{2,1,8,7,4,11,0}}
+\def\ptwo{{5,3,9,10,6,12,13}}
+\def\site{5668}
+\def\X{{ 36.0000, 40.0000, 38.0000, 41.0000, 42.0000, 39.0000, 43.0000, 37.0000, 38.5000, 40.5000, 39.5000, 38.2500, 42.5000, 40.3750, 38.1875}}
+\def\minx{ 36.0000}
+\def\maxx{ 43.0000}
+\def\T{{  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0183,  0.0288,  0.4089,  0.5630,  0.6546,  1.5600,  2.0030}}
+\def\Tnorm{{  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.1832,  0.2878,  4.0826,  5.6218,  6.5358, 15.5763, 20.0000}}
+\def\LAB{{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14}}
+\def\coloring{-1}
+\def\globalindex{{1,9,10,3,8,5,6}}
+\def\globalindiceson{1}
+\def\regrafttime{  0.1120}
+\def\regrafttimenorm{  1.1185}
+\def\recombinationtime{  0.0196}
+\def\recombinationtimenorm{  0.1960}
+\def\NL{8}
+\def\NN{15}
+\def\prune{4}
+\def\regraft{9}
+
+\def\prpar{7}
+\def\rgpar{10}
+
+\def\newnode{-1}
+
+\input{./phytree.tex}
+
+\def\pone{{2,1,4,8,7,6,0}}
+\def\ptwo{{5,3,9,10,11,12,13}}
+\def\site{7685}
+\def\X{{ 45.0000, 51.0000, 48.0000, 52.0000, 50.0000, 49.0000, 46.0000, 47.0000, 48.5000, 51.5000, 50.7500, 49.6250, 48.3125, 47.1562, 46.0781}}
+\def\minx{ 45.0000}
+\def\maxx{ 52.0000}
+\def\T{{  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0183,  0.0288,  0.1120,  0.4089,  0.5630,  1.5600,  2.0030}}
+\def\Tnorm{{  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.0000,  0.1832,  0.2878,  1.1185,  4.0826,  5.6218, 15.5763, 20.0000}}
+\def\LAB{{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14}}
+\def\coloring{-1}
+\def\globalindex{{1,9,11,10,3,5,6}}
+\def\globalindiceson{1}
+\def\regrafttime{ -1.0000}
+\def\regrafttimenorm{ -9.9850}
+\def\recombinationtime{ -1.0000}
+\def\recombinationtimenorm{ -9.9850}
+\def\NL{8}
+\def\NN{15}
+\def\prune{-1}
+\def\regraft{-1}
+
+\def\prpar{-1}
+\def\rgpar{-1}
+
+\def\newnode{-1}
+
+\input{./phytree.tex}
+
+\end{tikzpicture}
+\end{document}
